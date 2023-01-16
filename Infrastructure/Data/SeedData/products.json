@@ -1,0 +1,170 @@
+[
+  {
+    "Name": " Apple AirPods (2nd Generation) with Charging Case",
+    "photoUrl": "ddddddddddddddd",
+    "Description": "Automatically on, automatically connected Easy setup for all your Apple double-tap Double-tap to play or skip forward Charges ",
+    "Price": 6119,
+    "ProductTypeId ": 4,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple Airpods Pro With MagSafe Charging Case",
+    "photoUrl": "ddddddddddddd",
+    "Description": "Connection: Bluetooth 5.0 Active Noise Cancellation  More customizable fit and seal Transparand water resistant (IPX4)² Automatically on.",
+    "Price": 9333,
+    "ProductTypeId": 4,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": " Apple Apple MacBook Air 13 (2020) inch M1 8C CPU 7C GPU 8gb ram 256gb Gold / MGND3AB/A AR",
+    "photoUrl": "ffffffffff",
+    "Description": "Apple M1 chip with 8 core CPU, 7 core GPU, and 16 core Neural Tone Magic Keyboard Touch ID Force Touch trackpad Two Thunderbolt / USB 4 ports",
+    "Price": 39800,
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple MacBook Pro 13-inch-16GB RAM/1TB SSD/Space Gray",
+    "photoUrl": "gggggggggggg",
+    "Description": "Model Identifier: MacBookPro16,2Battery: Lithium-polymerBattery Wattage: 58.2Color: Space GrayMax Size: 6 MBCPU Manufacturer: IntelCPU Mod",
+    "Price": 57900,
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple MacBook Pro 14 M1Pro 8C CPU 14C GPU/16GB/512GB/Silver/AR",
+    "photoUrl": "tttttttttttttttttttt",
+    "Description": "Apple M1 Pro or M1 Max chip for a massive leap in CPU, GPU, and machine learning performance Up to 10-core CPU delivers up to 3.7x faster performance ",
+    "Price": 79900,
+    "ProductTypeId": 2,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple iPhone 12 Pro with FaceTime - 256GB - Graphite",
+    "photoUrl": "ggggggg",
+    "Description": "6.1-inch Super Retina XDR OLED Display 256 GB Internal Storage, 6 GB RAM 12 + 12 + 12 MP (2x3.1 GHz + 4x1.8 GHz)",
+    "Price": 35000,
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple IPhone 13 , 128GB , Midnight",
+    "photoUrl": "ggggggggggggg",
+    "Description": "Display : 6.1 inch, Super Retina XDR display ,Chip : A15 Bionic chip ,Main Camera : Dual 12MP camera system ,Selife Camera : 12MP cam",
+    "Price": 49900,
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple IPhone 13 Pro (256GB) AlpineGreen",
+    "photoUrl": "gggggggggggg",
+    "Description": "Super Retina XDR display with ProMotion 6.1-inch (diagonal) all-screen OLED display Resolution 2532 x 1170 pixel",
+    "Price": 46900,
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Apple iPhone 13 Single SIM with FaceTime - 128GB - Blue",
+    "photoUrl": "gggggggggggggg",
+    "Description": " Dimensions: 146.7 x 71.5 x 7.7 mm Weight: 174 g Build: Glass front (Gorilla Glass), glass back (Gorilla Glass), aluminum frame SIM",
+    "Price": 29999,
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Samsung Galaxy Note20 - 6.7-inch 256GB/8GB Dual SIM 4G Mobile Phone - Mystic Bronze",
+    "photoUrl": "yyyyyyyyy",
+    "Description": "6.7-inch FHD+ Super AMOLED Plus Infinity-O Display 256GB Storage, 8 GB RAM 12 + 64 + 12 MP Back Camera, 10 MP Front ",
+    "Price": 21999,
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Samsung Galaxy S21+ - 6.7-inch 256GB/8GB Dual SIM 5G Mobile Phone - Phantom Black",
+    "photoUrl": "hhhhhhhh",
+    "Description": "6.7-inch Dynamic AMOLED 2X Infinity-O Display , 256 GB ROM, 8GB RAM , 12 + 64 + 12 Back ",
+    "Price": 23444,
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Samsung Galaxy Z Flip3 - 6.7-inch 256GB/8GB Dual Sim 5G Mobile Phone - Green",
+    "photoUrl": "hhhhhhhhh",
+    "Description": "6.7-inch FHD+ Foldable Dynamic AMOLED 2X Display ,256GB Storage, 8 GB RAM ,12 + 12 MP ",
+    "Price": 24412,
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Samsung Samsung Galaxy A23 - 6.6-inch 128GB/6GB Dual Sim 4G Mobile Phone - Black",
+    "photoUrl": "jjjjjjjjjjj",
+    "Description": "Processor: Octa-core Snapdragon 680 6 Nano ,Size / RAM: 128 GB with 6 GB ",
+    "Price": 7220,
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "LG 50NANO796QA شاشه ال جي 50 بوصه نانو سمارت برسيفر داخلي",
+    "photoUrl": "nnnnnnnnnn",
+    "Description": "Resolution : 3840 x 2160 ,Color/Wide Color",
+    "Price": 17999,
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "LG 50UP7500PVG UHD 4K Smart LED TV with Built-in Receiver TV - 50 Inch",
+    "photoUrl": "ssssssssss",
+    "Description": "Brand: LG ,Type : 4K UHD ,Resolution    : 3840 x 2160 ",
+    "Price": 10999,
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "LG UP7750PVB 4K تليفزيون ال جي سمارت 70 بوصة الترا اتش دي",
+    "photoUrl": "zzzzzzzzzzz",
+    "Description": "Active HDR optimizes every scene, delivering ",
+    "Price": 20824,
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": " Panasonic تلفزيون سمارت 55 بوصة 4 كيه فائقة الدقة Ultra HD من باناسونيك، لون اسود، TH-55HX750E",
+    "photoUrl": "uuuuuuuuuuuu",
+    "Description": "Brand: Panasonic, Model Number: TH-55HX750",
+    "Price": 15500,
+    "ProductTypeId": 3,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Samsung QA50Q60Bشاشة سامسونج 50بوصة",
+    "photoUrl": "hhhhhhhhhh",
+    "Description": " Screen Type Smart TV ,Screen size in inch 50 Inch ,HDMI Ports 4 ",
+    "Price": 19929,
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Samsung شاشة تلفزيون سامسونج 50 بوصة معالج كريستال بجودة 4K LED موديل UA50BU8000UXEG",
+    "photoUrl": "jjjjjjjjjjjj",
+    "Description": " Screen size: 50-inch screen with a resolution of 3,840 x 2,160 - 50Hz ",
+    "Price": 11999,
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Toshiba 4K Smart LED TV 75 Inch - Android System - WiFi Connection - 4 HDMI - 2 USB Inputs",
+    "photoUrl": "nnnnnnnnnnnnnn",
+    "Description": "TOSHIBA 4K Smart D-LED TV ,Screen Size : 75 Inch ,Resolution : 3840 x ",
+    "Price": 27800,
+    "ProductTypeId": 3,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Toshiba 32L3965EA - 32-inch HD LED TV With Built-In Receiver",
+    "photoUrl": "kkkkkkkkkkk",
+    "Description": "Screen Size: 32 Inch , Resolution: HD (1366 x 768), Aspect Ratio: 16:9 ,Viewing Angle: 178ْ",
+    "Price": 5130,
+    "ProductTypeId": 3,
+    "ProductBrandId": 5
+  }
+]
