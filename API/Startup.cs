@@ -39,7 +39,13 @@ namespace API
             services.AddDbContext<StoreContext>(option => option.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
             services.AddApplicationServices();
             services.AddSwaggerServicesExtensions();
-
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +60,8 @@ namespace API
             app.UseRouting();
             // Use Static File To Make APi Server serve Images
             app.UseStaticFiles();
+            app.UseCors("CorsPolicy");
+
             app.UseAuthorization();
             app.UseSwaggerDocumentation();
             app.UseEndpoints(endpoints =>

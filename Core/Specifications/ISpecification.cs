@@ -10,5 +10,14 @@ namespace Core.Specifications
     {
         Expression<Func<T, bool>> Crietria { get; }
         List<Expression<Func<T, object>>> Includes { get; }
+
+        // For API Sorting 
+        Expression<Func<T, object>> OrderBy { get; }
+        Expression<Func<T, object>> OrderByDescending { get; }
+
+        // For API Pagination
+        int Take { get; }
+        int Skip { get; }
+        bool ISPagingEnabled { get; }
     }
 }
