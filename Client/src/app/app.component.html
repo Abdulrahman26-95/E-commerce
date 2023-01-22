@@ -1,3 +1,10 @@
-<h1> Welcome {{title}}</h1>
-<P class="text-danger">Abdulrahman Amir</P>
-<input class="btn btn-outline-dark" type="button" value="ADD">
+<app-nav-bar></app-nav-bar>
+
+<div class="container" style="margin-top: 140px;">
+  <h1 class="text-dark">Welcome {{title}}</h1>
+</div>
+<ul>
+  <li class="list-unstyled text-dark" *ngFor="let product of Products">
+    {{product.name}}
+  </li>
+</ul>
