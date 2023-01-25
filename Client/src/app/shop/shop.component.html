@@ -1,0 +1,96 @@
+<div class="container">
+    <div class="row">
+        <!--   ***********************  Side Bar   *************************-->
+        <!--  ************************  Sorts      *******************-->
+        <section class="col-3">
+            <h5 class="one fs-4 font-monospace my-3 ">Sorts By</h5>
+            <ul class="list-group">
+                <li class="list-group-item -striped " *ngFor="let option of sortOptions" 
+                    id="{{option.value}}"
+                    [class.active]="option.value==this.shopParam.sort" 
+                    (mouseover)="activeClass(option.value)"
+                    (mouseleave)="removeActiveClass(option.value)" 
+                    (click)="pickProductsBySorting(option.value)">
+                    {{option.name}}
+                </li>
+            </ul>
+
+            <!--  *************** Sorting By Brands *****************-->
+            <h5 class="one fs-4 font-monospace my-3 ">Brands</h5>
+            <ul class="list-group">
+                <li class="list-group-item -striped " *ngFor="let brand of Brands" 
+                    id="{{brand.id}}"
+                    [class.active]="brand.id === this.shopParam.brandId" 
+                    (mouseover)="activeClass(brand.id)"
+                    (mouseleave)="removeActiveClass(brand.id)" 
+                    [value]="brand.id"
+                    (click)="pickProductsByBrand(brand.id)">
+                    {{brand.name}}
+                </li>
+            </ul>
+            <!--  ************ Sorting By Types **************  -->
+            <h5 class=" one fs-4 font-monospace my-3 ml-5">Types</h5>
+            <ul class="list-group">
+                <li class="list-group-item " *ngFor="let type of Types" id="{{type.name}}"
+                    [class.active]="type.id===this.shopParam.typeId" 
+                    (mouseover)="activeClass(type.name)"
+                    (mouseleave)="removeActiveClass(type.name)" 
+                    [value]="type.id" 
+                    (click)="pickProductsByType(type.id)">
+                    {{type.name}}
+                </li>
+            </ul>
+        </section>
+        <!--  ************************   End Of Side Bar Section  *********************-->
+
+        <!--     *************************   Main Section  *******************       -->
+        <section class="col-9">
+            <div class="d-flex  justify-content-between align-items-center pb-2">
+                <!--  ************************ Header **************************-->
+                <app-paging-header [totalProducts]="this.totalProducts" 
+                    [pageIndex]="this.shopParam.pageIndex"
+                    [pageSize]="this.shopParam.pageSize">
+                </app-paging-header>
+
+                <!--     ********************  Search  ***********************-->
+                <div class="form-inline mr-2 mt-2">
+                    <input (keyup)="onSearch()" class="form-control d-inline-block mr-2 mx-3" #search
+                    style="width:300px" placeholder="Search" type="text">
+
+                    <button class=" d-inline-block btn btn-outline-success my-2 "
+                    (click)="onSearch()">Search</button>
+                    <button class=" d-inline-block btn btn-outline-primary mx-3"
+                    (click)="onReset()">Reset</button>
+                </div>
+            </div>
+            <!--  **************************** End Of Main Section *****************-->
+
+            <!--   *******************************  Cards  ********************************-->
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col-4 mb-4" *ngFor="let item of Products">
+                    <p *ngIf="totalProducts && totalProducts>0">
+                        <app-product-items [product]="item"></app-product-items>
+                    </p>
+                </div>
+            </div>
+            <div class="row my-5 ">
+                <div class="my-5" *ngIf="totalProducts==0">
+                    <p class="text-center fs-5 text-danger my-5">
+                        Unfortunately , There Are No Products Available Right Now
+                    </p>
+                </div>
+            </div>
+            <!--    ********************** End Of Cards Section ************************-->
+
+            <!-- *******************   Pagination     *************************-->
+            <div class="d-flex justify-content-center my-3" *ngIf="totalProducts>0">
+                <app-paging-footer
+                [totalProducts]="totalProducts"
+                [pageSize]="shopParam.pageSize"
+                [pageIndex]="shopParam.pageIndex"
+                (pageChanged)="onChangePage($event)"
+                ></app-paging-footer>
+            </div>
+        </section>
+    </div>
+</div>
