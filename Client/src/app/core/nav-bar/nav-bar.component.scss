@@ -11,3 +11,16 @@
     top: -15px;
     right: -1px;
 }
+nav a{
+    color: antiquewhite;
+    text-decoration: none;
+
+    &.active{
+        color:#3385D9;
+        font-weight: 700;        
+    }
+}
+// nav a:hover{
+//     color: #3385D9;
+//     font-weight: 500;
+// }

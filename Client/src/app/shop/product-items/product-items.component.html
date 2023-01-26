@@ -1,13 +1,19 @@
 <div class="card h-100 shadow-sm bg-light">
     <img class="img-fluid" [src]="product.photoUrl" alt="{{product.name}}">
     <div class="card-body d-flex flex-column">
-        <a href="#" class="text-uppercase">
+        <a routerLink="/shop/{{product.id}}" class="text-uppercase text-decoration-none"
+        routerLinkActive="active" [routerLinkActiveOptions]="{excat:true}"
+        >
             <h6>{{product.name}}</h6>
         </a>
         <span>{{product.price | currency}}</span>
         <div class="btn-group mt-auto">
-            <button type="button" class="btn md btn btn-outline-secondary fa fa-shopping-cart mx-3"></button>
-            <button type="button" class="btn btn-outline-success">View</button>
+            <button class="btn md btn btn-outline-secondary fa fa-shopping-cart mx-3"></button>
+            <button type="button" routerLink="/shop/{{product.id}}" routerLinkActive="active" 
+            [routerLinkActiveOptions]="{exact:true}" 
+            class="btn btn-outline-success">
+                View
+            </button>
         </div>
     </div>
 </div>
