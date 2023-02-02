@@ -21,8 +21,9 @@ export class ProductDetailsComponent implements OnInit {
 
   getProductById(){
     this.shopService.getProductById(+this.activateRoute.snapshot.paramMap.get('id'))
-    .subscribe(response=>{this.product=response},
-      error=>{console.log(error)}
+    .subscribe({next:response=>{this.product=response},
+      error:error=>{console.log(error)}
+    }
       )
   }
   

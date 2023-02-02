@@ -41,13 +41,13 @@ export class ShopComponent implements OnInit {
   // Get All Products
   getProducts() {
     this.shopService.getAllProducts(this.shopParam)
-      .subscribe(response => {
+      .subscribe({next:response => {
         this.Products = response.data;
         this.shopParam.pageIndex = response.pageIndex;
         this.shopParam.pageSize = response.pageSize;
         this.totalProducts = response.count;
       },
-        error => { console.log(error) }
+        error:error => { console.log(error) }}
       );
   }
   // Filter Products By Brands And Types 
@@ -79,17 +79,19 @@ export class ShopComponent implements OnInit {
   }
   // Get ProductBrands 
   getBrands() {
-    this.shopService.getBrands().subscribe(response => {
+    this.shopService.getBrands().subscribe({next:response => {
       this.Brands =
         [{ id: 0, name: "All" }, ...response]
     },
-      error => { console.log(error) })
+      error:error => { console.log(error) }}
+      )
   }
   // Get ProductTypes
   getTypes() {
     this.shopService.getTypes()
-      .subscribe(response => { this.Types = [{ id: 0, name: "All" }, ...response] },
-        error => { console.log(error) })
+      .subscribe({next:response => { this.Types = [{ id: 0, name: "All" }, ...response] },
+        error:error => { console.log(error) }}
+        )
   }
   // Pagination
   onChangePage(event: any) {
