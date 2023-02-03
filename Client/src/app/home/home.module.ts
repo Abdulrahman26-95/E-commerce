@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { CoreModule } from '../core/core.module';
 import { ShopModule } from '../shop/shop.module';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -13,7 +14,8 @@ import { ShopModule } from '../shop/shop.module';
   imports: [
     CommonModule,
     CoreModule,
-    ShopModule
+    ShopModule,
+    SharedModule
   ],
   exports:[HomeComponent]
 })

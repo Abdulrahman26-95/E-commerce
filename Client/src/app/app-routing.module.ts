@@ -9,13 +9,13 @@ import { ProductDetailsComponent } from './shop/product-details/product-details.
 import { ShopComponent } from './shop/shop.component';
 
 const routes: Routes = [
-  {path:'' , component:HomeComponent},
-  {path:'errors', component:TestErrorsComponent},
-  {path:'notFound',component:NotFoundComponent},
-  {path:'serverError',component:ServerErrorComponent},
+  { path: '', component: HomeComponent, data: { breadcrumb: 'Home' } },
+  { path: 'errors', component: TestErrorsComponent },
+  { path: 'notFound', component: NotFoundComponent },
+  { path: 'serverError', component: ServerErrorComponent },
   // Lazy Loading
-  {path: 'shop',loadChildren:()=>import('./shop/shop.module').then(mod=>mod.ShopModule) },
-  {path:'**',redirectTo:'',pathMatch:'full'}
+  { path: 'shop', loadChildren: () => import('./shop/shop.module').then(mod => mod.ShopModule) },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

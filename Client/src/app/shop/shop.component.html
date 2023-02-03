@@ -1,11 +1,10 @@
-<app-nav-bar></app-nav-bar>
 <div class="container">
-    <div class="row">
+    <div class="row" *ngIf="Types.length>0 && Brands.length>0">
         <!--   ***********************  Side Bar   *************************-->
         <!--  ************************  Sorts      *******************-->
         <section class="col-3">
-            <h5 class="one fs-4 font-monospace my-3 ">Sorts By</h5>
-            <ul class="list-group">
+            <!-- <h5 class="one fs-4 font-monospace my-3 ">Sorts By</h5> -->
+            <ul class="list-group my-3">
                 <li class="list-group-item -striped " *ngFor="let option of sortOptions" 
                     id="{{option.value}}"
                     [class.active]="option.value==this.shopParam.sort" 
@@ -17,8 +16,8 @@
             </ul>
 
             <!--  *************** Sorting By Brands *****************-->
-            <h5 class="one fs-4 font-monospace my-3 ">Brands</h5>
-            <ul class="list-group">
+            <!-- <h5 class="one fs-4 font-monospace my-3 ">Brands</h5> -->
+            <ul class="list-group my-2">
                 <li class="list-group-item -striped " *ngFor="let brand of Brands" 
                     id="{{brand.id}}"
                     [class.active]="brand.id === this.shopParam.brandId" 
@@ -30,8 +29,8 @@
                 </li>
             </ul>
             <!--  ************ Sorting By Types **************  -->
-            <h5 class=" one fs-4 font-monospace my-3 ml-5">Types</h5>
-            <ul class="list-group">
+            <!-- <h5 class=" one fs-4 font-monospace my-3 ml-5">Types</h5> -->
+            <ul class="list-group my-3">
                 <li class="list-group-item " *ngFor="let type of Types" id="{{type.name}}"
                     [class.active]="type.id===this.shopParam.typeId" 
                     (mouseover)="activeClass(type.name)"
