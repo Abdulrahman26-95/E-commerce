@@ -6,6 +6,7 @@ using API.Errors;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
+using StackExchange.Redis;
 
 namespace API.Extensions
 {
@@ -15,7 +16,11 @@ namespace API.Extensions
         {
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>)));
-
+            // services.AddSingleton<IConnectionMultiplexer>(c =>
+            // {
+            //     var options = ConfigurationOptions.Parse(_configuration.GetConnectionString("Redis"));
+            //     return ConnectionMultiplexer.Connect(options);
+            // });
             services.Configure<ApiBehaviorOptions>(options =>
             {
                 options.InvalidModelStateResponseFactory = actionContext =>

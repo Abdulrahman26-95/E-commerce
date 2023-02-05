@@ -31,7 +31,7 @@
             <!--  ************ Sorting By Types **************  -->
             <!-- <h5 class=" one fs-4 font-monospace my-3 ml-5">Types</h5> -->
             <ul class="list-group my-3">
-                <li class="list-group-item " *ngFor="let type of Types" id="{{type.name}}"
+                <li class="list-group-item -striped " *ngFor="let type of Types" id="{{type.name}}"
                     [class.active]="type.id===this.shopParam.typeId" 
                     (mouseover)="activeClass(type.name)"
                     (mouseleave)="removeActiveClass(type.name)" 

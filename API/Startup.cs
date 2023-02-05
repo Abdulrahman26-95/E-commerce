@@ -18,6 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using StackExchange.Redis;
 
 namespace API
 {
@@ -37,6 +38,13 @@ namespace API
             services.AddAutoMapper(typeof(MappingProfiles));
             services.AddControllers();
             services.AddDbContext<StoreContext>(option => option.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
+            // Basket Congfigurations
+            services.AddSingleton<IConnectionMultiplexer>(c =>
+            {
+                var options = ConfigurationOptions.Parse(_configuration.GetConnectionString("Redis"));
+                return ConnectionMultiplexer.Connect(options);
+            });
+            services.AddScoped<IBasketRepository,BasketRepository>();
             services.AddApplicationServices();
             services.AddSwaggerServicesExtensions();
             services.AddCors(opt =>
